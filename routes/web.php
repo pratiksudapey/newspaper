@@ -16,15 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.index');
 });
-<<<<<<< Updated upstream
-
 
 Route::get('/about', function() {
     return view('frontend.about');
 });
-
-=======
 Route::get('/categori', function () {
     return view('frontend.categori');
 });
->>>>>>> Stashed changes
+
