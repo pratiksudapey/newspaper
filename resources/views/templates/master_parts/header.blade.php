@@ -52,8 +52,8 @@
                             <div class="main-menu d-none d-md-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="about.html">Home</a></li>
-                                        <li><a href="categori.html">Category</a></li>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/categori">Category</a></li>
                                         <li><a href="/about">About</a></li>
                                         <li><a href="latest_news.html">Latest News</a></li>
                                         <li><a href="contact.html">Contact</a></li>
