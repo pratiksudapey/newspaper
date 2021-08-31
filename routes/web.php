@@ -18,9 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.index');
 });
-
-
-
 Route::get('/about', function() {
     return view('frontend.about');
 });
@@ -33,6 +30,5 @@ Route::get('/contact', function () {
 Route::get('/latest_news', function () {
     return view('frontend.latest_news');
 });
-
 
 
