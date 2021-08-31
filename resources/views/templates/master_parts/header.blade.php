@@ -9,7 +9,10 @@
                             <div class="header-info-left">
                                 <ul>
                                     <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                                    <li><img src="assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2019</li>
+                                    
+                                    <li><img src="assets/img/icon/header_icon1.png" alt="">{{ now()->toDateTimeString() }}</li>
+
+                                    
                                 </ul>
                             </div>
                             <div class="header-info-right">
@@ -53,10 +56,10 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="about.html">Home</a></li>
-                                        <li><a href="categori.html">Category</a></li>
                                         <li><a href="/about">About</a></li>
-                                        <li><a href="latest_news.html">Latest News</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="categori">Category</a></li>
+                                        <li><a href="latest_news">Latest News</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="elements.html">Element</a></li>

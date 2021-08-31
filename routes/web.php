@@ -1,6 +1,8 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +18,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend.index');
 });
-
 Route::get('/about', function() {
     return view('frontend.about');
 });
 Route::get('/categori', function () {
     return view('frontend.categori');
 });
+Route::get('/contact', function () {
+    return view('frontend.contact');
+});
+Route::get('/latest_news', function () {
+    return view('frontend.latest_news');
+});
+
 
