@@ -223,6 +223,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </p>
             </a>
           </li>
+          @if (auth()->user()->isAdmin())
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fa fa-user"></i> &nbsp;
+                <p>
+                  Users
+                  
+                </p>
+              </a>
+            </li>
+          @endif
+        
           <li class="nav-item">
             <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
               Logout
