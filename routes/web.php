@@ -24,7 +24,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::middleware(['auth'])->group(function(){
 
     Route::get('/about', function() {
         return view('frontend.about');
@@ -36,11 +35,13 @@ Route::middleware(['auth'])->group(function(){
         return view('frontend.contact');
     });
     Route::get('/latest_news', function () {
+        
         return view('frontend.latest_news');
-    });
-});
+     });
 
-Route::middleware(['auth'] ,['admin'])->group(function(){
+
+Route::middleware(['auth'] ,['admin'])->group(function()
+{
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
