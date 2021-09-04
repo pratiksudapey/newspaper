@@ -14,7 +14,6 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">
-                                    <li><a href="/login"><i class="far fa-user"></i>   login</a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                    <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
@@ -54,18 +53,19 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Home</a></li>
-                                        <li><a href="/categori">Category</a></li>
+                                        <li><a href="#">category</a>
+                                            <ul class="submenu">
+                                                <li><a href="All.html">All</a></li>
+                                                <li><a href="Lifestyle.html">Lifestyle</a></li>
+                                                <li><a href="travel.html">Travel</a></li>
+                                                <li><a href="fashion.html">Fashion</a></li>
+                                                <li><a href="sports.html">Sports</a></li>
+                                                <li><a href="technology.html">Technology</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="/about">About</a></li>
                                         <li><a href="latest_news">Latest News</a></li>
                                         <li><a href="/contact">Contact</a></li>
-                                        <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">Element</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                                <li><a href="details.html">Categori Details</a></li>
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </nav>
                             </div>

@@ -24,6 +24,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::middleware(['auth'])->group(function(){
+
 
     Route::get('/about', function() {
         return view('frontend.about');
@@ -38,10 +40,9 @@ Auth::routes();
         
         return view('frontend.latest_news');
      });
+});
 
-
-Route::middleware(['auth'] ,['admin'])->group(function()
-{
+Route::middleware(['auth'] ,['admin'])->group(function(){
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     
