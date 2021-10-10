@@ -3,6 +3,16 @@
 <head>
     @include("templates.master_parts.meta_tag")
     @include("templates.master_parts.style")
+    <style>
+        .zoom img{
+            width: 100%;
+            transition: 0.5s all ease-in-out;
+        }
+  
+        .zoom:hover img{
+            transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
 </head>
 <body>
 @include("templates.master_parts.header")

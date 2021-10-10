@@ -1,6 +1,6 @@
 <header>
     <!-- Header Start -->
-   <div class="header-area">
+   <div class="header-area mb-5">
         <div class="main-header ">
             <div class="header-top black-bg d-none d-md-block">
                <div class="container">
@@ -9,11 +9,13 @@
                             <div class="header-info-left">
                                 <ul>
                                     <li><img src="assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                                    <li><img src="assets/img/icon/header_icon1.png" alt="">{{ now()->toDateTimeString() }}</li>
+                                    <li><img src="assets/img/icon/header_icon1.png" alt="">{{ now()->format('h:i:s a') }}</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">
+                                    <li><img src="" alt=""><a href="/login">Login</a></li>
+                                    <li><img src="" alt=""><a href="/register">Register</a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                    <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
@@ -32,11 +34,11 @@
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9">
+                        {{-- <div class="col-xl-9 col-lg-9 col-md-9">
                             <div class="header-banner f-right ">
                                 <img src="assets/img/hero/header_card.jpg" alt="">
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                </div>
             </div>
