@@ -20,7 +20,7 @@
                                     <li class="news-item">Rem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                                 </ul>
                             </div>
-                            
+                            ~
                         </div>
                     </div>
                 </div>
