@@ -14,8 +14,12 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-social">
-                                    <li><img src="" alt=""><a href="/login">Login</a></li>
-                                    <li><img src="" alt=""><a href="/register">Register</a></li>
+                                   @if (Auth::check())
+                                   <li><a href="home">{{ Auth::user()->name }}</a></li>
+                                   @else
+                                   <li><a href="login">Login</a></li>
+                                   <li><a href="register">Register</a></li>
+                                   @endif
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                    <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
