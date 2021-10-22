@@ -4,9 +4,13 @@
     @include("templates.master_parts.meta_tag")
     @include("templates.master_parts.style")
     <style>
+        .zoom{
+            overflow: hidden;
+        }
         .zoom img{
             width: 100%;
             transition: 0.5s all ease-in-out;
+            
         }
   
         .zoom:hover img{

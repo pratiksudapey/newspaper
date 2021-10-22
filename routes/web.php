@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.index');
-});
+Route::get('/', [App\Http\Controllers\PostController::class, 'index']);
 
 
 
@@ -26,6 +26,8 @@ Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
 
+    Route::resource('post', PostController::class);
+    Route::resource('category', CategoryController::class);
 
     Route::get('/about', function() {
         return view('frontend.about');

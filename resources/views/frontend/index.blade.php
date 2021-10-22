@@ -16,46 +16,26 @@
                                 <img class="" src="assets/img/trending/trending_top.jpg" alt="">
                                 <div class="trend-top-cap">
                                     <span>Appetizers</span>
-                                    <h2><a href="details.html">Welcome To The Best Model Winner<br> Contest At Look of the year</a></h2>
+                                    <h2><a href="details.html">Home To The Best Model Winner<br> Contest At Look of the year</a></h2>
                                 </div>
                             </div>
                         </div>
                         <!-- Trending Bottom -->
                         <div class="trending-bottom">
                             <div class="row">
+                                @foreach ($posts as $post)                                    
                                 <div class="col-lg-4">
                                 <div class="single-bottom mb-35">
-                                    <div class="trend-bottom-img mb-30">
-                                        <img src="assets/img/trending/trending_bottom1.jpg" alt="">
+                                    <div class="trend-bottom-img mb-30 ">
+                                        <img src="{{ $post->image }}" alt="">
                                     </div>
                                     <div class="trend-bottom-cap">
-                                        <span class="color1">Lifestyple</span>
-                                        <h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4>
+                                        <span class="color1">{{$post->category->name}}</span>
+                                        <h4><a href="details.html">{{$post->title}}</a></h4>
                                     </div>
                                 </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="single-bottom mb-35">
-                                        <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom2.jpg" alt="">
-                                        </div>
-                                        <div class="trend-bottom-cap">
-                                            <span class="color2">Sports</span>
-                                            <h4><h4><a href="details.html">Get the Illusion of Fuller Lashes by “Mascng.”</a></h4></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-bottom mb-35">
-                                        <div class="trend-bottom-img mb-30">
-                                            <img src="assets/img/trending/trending_bottom3.jpg" alt="">
-                                        </div>
-                                        <div class="trend-bottom-cap">
-                                            <span class="color3">Travels</span>
-                                            <h4><a href="details.html"> Welcome To The Best Model Winner Contest</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -67,7 +47,7 @@
                             </div>
                             <div class="trand-right-cap">
                                 <span class="color1">Concert</span>
-                                <h4><a href="details.html">Welcome To The Best Model Winner Contest</a></h4>
+                                <h4><a href="details.html">common To The Best Model Winner Contest</a></h4>
                             </div>
                         </div>
                         <div class="trand-right-single d-flex">
@@ -268,7 +248,7 @@
                     <div class="col-12">
                         <div class="recent-active dot-style d-flex dot-style">
                             <div class="single-recent mb-100">
-                                <div class="what-img">
+                                <div class="what-img zoom">
                                     <img src="assets/img/news/recent1.jpg" alt="">
                                 </div>
                                 <div class="what-cap">
