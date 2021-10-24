@@ -8,6 +8,16 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    /*
+        To display list in backend
+        public function index()
+    */
+    public function showall()
+    {
+        return view('frontend.index')->with('posts',Post::all());
+    }
+    
     /**
      * Display a listing of the resource.
      *
