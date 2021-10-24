@@ -38,8 +38,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/contact', function () {
         return view('frontend.contact');
     });
-    Route::get('/latest_news', function () {
-        
+    Route::get('/latest_news', function () {        
         return view('frontend.latest_news');
      });
 });
